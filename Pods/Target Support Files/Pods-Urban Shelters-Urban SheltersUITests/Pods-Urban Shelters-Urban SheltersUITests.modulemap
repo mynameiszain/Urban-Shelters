@@ -1,0 +1,6 @@
+framework module Pods_Urban_Shelters_Urban_SheltersUITests {
+  umbrella header "Pods-Urban Shelters-Urban SheltersUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

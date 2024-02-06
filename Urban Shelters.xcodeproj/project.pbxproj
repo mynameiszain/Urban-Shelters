@@ -1,0 +1,798 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		274B39DE2B7286400067DB48 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274B39DD2B7286400067DB48 /* AppDelegate.swift */; };
+		274B39E02B7286400067DB48 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274B39DF2B7286400067DB48 /* SceneDelegate.swift */; };
+		274B39E22B7286400067DB48 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274B39E12B7286400067DB48 /* ViewController.swift */; };
+		274B39E52B7286400067DB48 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 274B39E32B7286400067DB48 /* Main.storyboard */; };
+		274B39E72B7286410067DB48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 274B39E62B7286410067DB48 /* Assets.xcassets */; };
+		274B39EA2B7286410067DB48 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 274B39E82B7286410067DB48 /* LaunchScreen.storyboard */; };
+		274B39F52B7286410067DB48 /* Urban_SheltersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274B39F42B7286410067DB48 /* Urban_SheltersTests.swift */; };
+		274B39FF2B7286410067DB48 /* Urban_SheltersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274B39FE2B7286410067DB48 /* Urban_SheltersUITests.swift */; };
+		274B3A012B7286410067DB48 /* Urban_SheltersUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274B3A002B7286410067DB48 /* Urban_SheltersUITestsLaunchTests.swift */; };
+		274B3A0F2B7288400067DB48 /* AccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274B3A0E2B7288400067DB48 /* AccountVC.swift */; };
+		274B3A162B7288600067DB48 /* ForgotVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274B3A112B7288600067DB48 /* ForgotVC.swift */; };
+		274B3A172B7288600067DB48 /* SigninVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274B3A132B7288600067DB48 /* SigninVC.swift */; };
+		274B3A182B7288600067DB48 /* SignupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274B3A152B7288600067DB48 /* SignupVC.swift */; };
+		274B3A202B7288720067DB48 /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274B3A1B2B7288720067DB48 /* BaseVC.swift */; };
+		274B3A222B7288720067DB48 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274B3A1D2B7288720067DB48 /* Extensions.swift */; };
+		274B3A252B72A3D40067DB48 /* onboardingcell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274B3A242B72A3D40067DB48 /* onboardingcell.swift */; };
+		4FCD99CB8B080B4BB02691A0 /* Pods_Urban_Shelters.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3842880A51A9D5DBC2CBD415 /* Pods_Urban_Shelters.framework */; };
+		58AA5B4A4139D86AE20B1FF8 /* Pods_Urban_SheltersTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29348923AC3943E721E8C6FA /* Pods_Urban_SheltersTests.framework */; };
+		5A52C78C082D76A9C00DA915 /* Pods_Urban_Shelters_Urban_SheltersUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E49F0DE53FDA1A3ACC83FA8 /* Pods_Urban_Shelters_Urban_SheltersUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		274B39F12B7286410067DB48 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 274B39D22B7286400067DB48 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 274B39D92B7286400067DB48;
+			remoteInfo = "Urban Shelters";
+		};
+		274B39FB2B7286410067DB48 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 274B39D22B7286400067DB48 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 274B39D92B7286400067DB48;
+			remoteInfo = "Urban Shelters";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2381416511A13655D5EA8442 /* Pods-Urban Shelters.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Urban Shelters.debug.xcconfig"; path = "Target Support Files/Pods-Urban Shelters/Pods-Urban Shelters.debug.xcconfig"; sourceTree = "<group>"; };
+		274B39DA2B7286400067DB48 /* Urban Shelters.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Urban Shelters.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		274B39DD2B7286400067DB48 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		274B39DF2B7286400067DB48 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		274B39E12B7286400067DB48 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		274B39E42B7286400067DB48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		274B39E62B7286410067DB48 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		274B39E92B7286410067DB48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		274B39EB2B7286410067DB48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		274B39F02B7286410067DB48 /* Urban SheltersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Urban SheltersTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		274B39F42B7286410067DB48 /* Urban_SheltersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Urban_SheltersTests.swift; sourceTree = "<group>"; };
+		274B39FA2B7286410067DB48 /* Urban SheltersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Urban SheltersUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		274B39FE2B7286410067DB48 /* Urban_SheltersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Urban_SheltersUITests.swift; sourceTree = "<group>"; };
+		274B3A002B7286410067DB48 /* Urban_SheltersUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Urban_SheltersUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		274B3A0E2B7288400067DB48 /* AccountVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountVC.swift; sourceTree = "<group>"; };
+		274B3A112B7288600067DB48 /* ForgotVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotVC.swift; sourceTree = "<group>"; };
+		274B3A132B7288600067DB48 /* SigninVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SigninVC.swift; sourceTree = "<group>"; };
+		274B3A152B7288600067DB48 /* SignupVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupVC.swift; sourceTree = "<group>"; };
+		274B3A1B2B7288720067DB48 /* BaseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
+		274B3A1D2B7288720067DB48 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		274B3A242B72A3D40067DB48 /* onboardingcell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = onboardingcell.swift; sourceTree = "<group>"; };
+		29348923AC3943E721E8C6FA /* Pods_Urban_SheltersTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Urban_SheltersTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3842880A51A9D5DBC2CBD415 /* Pods_Urban_Shelters.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Urban_Shelters.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DB97E970EB3D4BA3642C544 /* Pods-Urban Shelters.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Urban Shelters.release.xcconfig"; path = "Target Support Files/Pods-Urban Shelters/Pods-Urban Shelters.release.xcconfig"; sourceTree = "<group>"; };
+		4E49F0DE53FDA1A3ACC83FA8 /* Pods_Urban_Shelters_Urban_SheltersUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Urban_Shelters_Urban_SheltersUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		73FB497F410EB2759933E04B /* Pods-Urban Shelters-Urban SheltersUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Urban Shelters-Urban SheltersUITests.release.xcconfig"; path = "Target Support Files/Pods-Urban Shelters-Urban SheltersUITests/Pods-Urban Shelters-Urban SheltersUITests.release.xcconfig"; sourceTree = "<group>"; };
+		93623BECCF951C14DB503C83 /* Pods-Urban SheltersTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Urban SheltersTests.debug.xcconfig"; path = "Target Support Files/Pods-Urban SheltersTests/Pods-Urban SheltersTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A0739F323AD42620A9556E18 /* Pods-Urban Shelters-Urban SheltersUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Urban Shelters-Urban SheltersUITests.debug.xcconfig"; path = "Target Support Files/Pods-Urban Shelters-Urban SheltersUITests/Pods-Urban Shelters-Urban SheltersUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		CD237B0D7BCF83F544593567 /* Pods-Urban SheltersTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Urban SheltersTests.release.xcconfig"; path = "Target Support Files/Pods-Urban SheltersTests/Pods-Urban SheltersTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		274B39D72B7286400067DB48 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FCD99CB8B080B4BB02691A0 /* Pods_Urban_Shelters.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		274B39ED2B7286410067DB48 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58AA5B4A4139D86AE20B1FF8 /* Pods_Urban_SheltersTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		274B39F72B7286410067DB48 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A52C78C082D76A9C00DA915 /* Pods_Urban_Shelters_Urban_SheltersUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		157FE9688BD38FE7D4F09528 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3842880A51A9D5DBC2CBD415 /* Pods_Urban_Shelters.framework */,
+				4E49F0DE53FDA1A3ACC83FA8 /* Pods_Urban_Shelters_Urban_SheltersUITests.framework */,
+				29348923AC3943E721E8C6FA /* Pods_Urban_SheltersTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		274B39D12B7286400067DB48 = {
+			isa = PBXGroup;
+			children = (
+				274B39DC2B7286400067DB48 /* Urban Shelters */,
+				274B39F32B7286410067DB48 /* Urban SheltersTests */,
+				274B39FD2B7286410067DB48 /* Urban SheltersUITests */,
+				274B39DB2B7286400067DB48 /* Products */,
+				C6852D58E9AA5E36E8128AAE /* Pods */,
+				157FE9688BD38FE7D4F09528 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		274B39DB2B7286400067DB48 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				274B39DA2B7286400067DB48 /* Urban Shelters.app */,
+				274B39F02B7286410067DB48 /* Urban SheltersTests.xctest */,
+				274B39FA2B7286410067DB48 /* Urban SheltersUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		274B39DC2B7286400067DB48 /* Urban Shelters */ = {
+			isa = PBXGroup;
+			children = (
+				274B3A192B7288720067DB48 /* Extension */,
+				274B39DD2B7286400067DB48 /* AppDelegate.swift */,
+				274B39DF2B7286400067DB48 /* SceneDelegate.swift */,
+				274B39E12B7286400067DB48 /* ViewController.swift */,
+				274B3A242B72A3D40067DB48 /* onboardingcell.swift */,
+				274B3A112B7288600067DB48 /* ForgotVC.swift */,
+				274B3A132B7288600067DB48 /* SigninVC.swift */,
+				274B3A152B7288600067DB48 /* SignupVC.swift */,
+				274B3A0E2B7288400067DB48 /* AccountVC.swift */,
+				274B39E32B7286400067DB48 /* Main.storyboard */,
+				274B39E62B7286410067DB48 /* Assets.xcassets */,
+				274B39E82B7286410067DB48 /* LaunchScreen.storyboard */,
+				274B39EB2B7286410067DB48 /* Info.plist */,
+			);
+			path = "Urban Shelters";
+			sourceTree = "<group>";
+		};
+		274B39F32B7286410067DB48 /* Urban SheltersTests */ = {
+			isa = PBXGroup;
+			children = (
+				274B39F42B7286410067DB48 /* Urban_SheltersTests.swift */,
+			);
+			path = "Urban SheltersTests";
+			sourceTree = "<group>";
+		};
+		274B39FD2B7286410067DB48 /* Urban SheltersUITests */ = {
+			isa = PBXGroup;
+			children = (
+				274B39FE2B7286410067DB48 /* Urban_SheltersUITests.swift */,
+				274B3A002B7286410067DB48 /* Urban_SheltersUITestsLaunchTests.swift */,
+			);
+			path = "Urban SheltersUITests";
+			sourceTree = "<group>";
+		};
+		274B3A192B7288720067DB48 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				274B3A1B2B7288720067DB48 /* BaseVC.swift */,
+				274B3A1D2B7288720067DB48 /* Extensions.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		C6852D58E9AA5E36E8128AAE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2381416511A13655D5EA8442 /* Pods-Urban Shelters.debug.xcconfig */,
+				3DB97E970EB3D4BA3642C544 /* Pods-Urban Shelters.release.xcconfig */,
+				A0739F323AD42620A9556E18 /* Pods-Urban Shelters-Urban SheltersUITests.debug.xcconfig */,
+				73FB497F410EB2759933E04B /* Pods-Urban Shelters-Urban SheltersUITests.release.xcconfig */,
+				93623BECCF951C14DB503C83 /* Pods-Urban SheltersTests.debug.xcconfig */,
+				CD237B0D7BCF83F544593567 /* Pods-Urban SheltersTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		274B39D92B7286400067DB48 /* Urban Shelters */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 274B3A042B7286410067DB48 /* Build configuration list for PBXNativeTarget "Urban Shelters" */;
+			buildPhases = (
+				D0EB2A2D98B6D89E326CD693 /* [CP] Check Pods Manifest.lock */,
+				274B39D62B7286400067DB48 /* Sources */,
+				274B39D72B7286400067DB48 /* Frameworks */,
+				274B39D82B7286400067DB48 /* Resources */,
+				01C310BF91D834DE95A402EF /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Urban Shelters";
+			productName = "Urban Shelters";
+			productReference = 274B39DA2B7286400067DB48 /* Urban Shelters.app */;
+			productType = "com.apple.product-type.application";
+		};
+		274B39EF2B7286410067DB48 /* Urban SheltersTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 274B3A072B7286410067DB48 /* Build configuration list for PBXNativeTarget "Urban SheltersTests" */;
+			buildPhases = (
+				D981165E1B67E5E42408E0D6 /* [CP] Check Pods Manifest.lock */,
+				274B39EC2B7286410067DB48 /* Sources */,
+				274B39ED2B7286410067DB48 /* Frameworks */,
+				274B39EE2B7286410067DB48 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				274B39F22B7286410067DB48 /* PBXTargetDependency */,
+			);
+			name = "Urban SheltersTests";
+			productName = "Urban SheltersTests";
+			productReference = 274B39F02B7286410067DB48 /* Urban SheltersTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		274B39F92B7286410067DB48 /* Urban SheltersUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 274B3A0A2B7286410067DB48 /* Build configuration list for PBXNativeTarget "Urban SheltersUITests" */;
+			buildPhases = (
+				C7E6C6CB292A6F589D6FF243 /* [CP] Check Pods Manifest.lock */,
+				274B39F62B7286410067DB48 /* Sources */,
+				274B39F72B7286410067DB48 /* Frameworks */,
+				274B39F82B7286410067DB48 /* Resources */,
+				B25E92A8BB881585AF0F5F40 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				274B39FC2B7286410067DB48 /* PBXTargetDependency */,
+			);
+			name = "Urban SheltersUITests";
+			productName = "Urban SheltersUITests";
+			productReference = 274B39FA2B7286410067DB48 /* Urban SheltersUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		274B39D22B7286400067DB48 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					274B39D92B7286400067DB48 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					274B39EF2B7286410067DB48 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 274B39D92B7286400067DB48;
+					};
+					274B39F92B7286410067DB48 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 274B39D92B7286400067DB48;
+					};
+				};
+			};
+			buildConfigurationList = 274B39D52B7286400067DB48 /* Build configuration list for PBXProject "Urban Shelters" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 274B39D12B7286400067DB48;
+			productRefGroup = 274B39DB2B7286400067DB48 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				274B39D92B7286400067DB48 /* Urban Shelters */,
+				274B39EF2B7286410067DB48 /* Urban SheltersTests */,
+				274B39F92B7286410067DB48 /* Urban SheltersUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		274B39D82B7286400067DB48 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				274B39EA2B7286410067DB48 /* LaunchScreen.storyboard in Resources */,
+				274B39E72B7286410067DB48 /* Assets.xcassets in Resources */,
+				274B39E52B7286400067DB48 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		274B39EE2B7286410067DB48 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		274B39F82B7286410067DB48 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		01C310BF91D834DE95A402EF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Urban Shelters/Pods-Urban Shelters-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Urban Shelters/Pods-Urban Shelters-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Urban Shelters/Pods-Urban Shelters-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B25E92A8BB881585AF0F5F40 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Urban Shelters-Urban SheltersUITests/Pods-Urban Shelters-Urban SheltersUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Urban Shelters-Urban SheltersUITests/Pods-Urban Shelters-Urban SheltersUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Urban Shelters-Urban SheltersUITests/Pods-Urban Shelters-Urban SheltersUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C7E6C6CB292A6F589D6FF243 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Urban Shelters-Urban SheltersUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D0EB2A2D98B6D89E326CD693 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Urban Shelters-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D981165E1B67E5E42408E0D6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Urban SheltersTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		274B39D62B7286400067DB48 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				274B3A162B7288600067DB48 /* ForgotVC.swift in Sources */,
+				274B3A182B7288600067DB48 /* SignupVC.swift in Sources */,
+				274B3A0F2B7288400067DB48 /* AccountVC.swift in Sources */,
+				274B39E22B7286400067DB48 /* ViewController.swift in Sources */,
+				274B3A202B7288720067DB48 /* BaseVC.swift in Sources */,
+				274B39DE2B7286400067DB48 /* AppDelegate.swift in Sources */,
+				274B3A252B72A3D40067DB48 /* onboardingcell.swift in Sources */,
+				274B3A172B7288600067DB48 /* SigninVC.swift in Sources */,
+				274B39E02B7286400067DB48 /* SceneDelegate.swift in Sources */,
+				274B3A222B7288720067DB48 /* Extensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		274B39EC2B7286410067DB48 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				274B39F52B7286410067DB48 /* Urban_SheltersTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		274B39F62B7286410067DB48 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				274B39FF2B7286410067DB48 /* Urban_SheltersUITests.swift in Sources */,
+				274B3A012B7286410067DB48 /* Urban_SheltersUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		274B39F22B7286410067DB48 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 274B39D92B7286400067DB48 /* Urban Shelters */;
+			targetProxy = 274B39F12B7286410067DB48 /* PBXContainerItemProxy */;
+		};
+		274B39FC2B7286410067DB48 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 274B39D92B7286400067DB48 /* Urban Shelters */;
+			targetProxy = 274B39FB2B7286410067DB48 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		274B39E32B7286400067DB48 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				274B39E42B7286400067DB48 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		274B39E82B7286410067DB48 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				274B39E92B7286410067DB48 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		274B3A022B7286410067DB48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		274B3A032B7286410067DB48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		274B3A052B7286410067DB48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2381416511A13655D5EA8442 /* Pods-Urban Shelters.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Urban Shelters/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "sameeramjad718-gmail.com.Urban-Shelters";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		274B3A062B7286410067DB48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3DB97E970EB3D4BA3642C544 /* Pods-Urban Shelters.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Urban Shelters/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "sameeramjad718-gmail.com.Urban-Shelters";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		274B3A082B7286410067DB48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93623BECCF951C14DB503C83 /* Pods-Urban SheltersTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "sameeramjad718-gmail.com.Urban-SheltersTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Urban Shelters.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Urban Shelters";
+			};
+			name = Debug;
+		};
+		274B3A092B7286410067DB48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD237B0D7BCF83F544593567 /* Pods-Urban SheltersTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "sameeramjad718-gmail.com.Urban-SheltersTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Urban Shelters.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Urban Shelters";
+			};
+			name = Release;
+		};
+		274B3A0B2B7286410067DB48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0739F323AD42620A9556E18 /* Pods-Urban Shelters-Urban SheltersUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "sameeramjad718-gmail.com.Urban-SheltersUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Urban Shelters";
+			};
+			name = Debug;
+		};
+		274B3A0C2B7286410067DB48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73FB497F410EB2759933E04B /* Pods-Urban Shelters-Urban SheltersUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "sameeramjad718-gmail.com.Urban-SheltersUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Urban Shelters";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		274B39D52B7286400067DB48 /* Build configuration list for PBXProject "Urban Shelters" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				274B3A022B7286410067DB48 /* Debug */,
+				274B3A032B7286410067DB48 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		274B3A042B7286410067DB48 /* Build configuration list for PBXNativeTarget "Urban Shelters" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				274B3A052B7286410067DB48 /* Debug */,
+				274B3A062B7286410067DB48 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		274B3A072B7286410067DB48 /* Build configuration list for PBXNativeTarget "Urban SheltersTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				274B3A082B7286410067DB48 /* Debug */,
+				274B3A092B7286410067DB48 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		274B3A0A2B7286410067DB48 /* Build configuration list for PBXNativeTarget "Urban SheltersUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				274B3A0B2B7286410067DB48 /* Debug */,
+				274B3A0C2B7286410067DB48 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 274B39D22B7286400067DB48 /* Project object */;
+}

@@ -1,0 +1,59 @@
+PODS:
+  - AAExtensions (0.1.4)
+  - Alamofire (5.8.1)
+  - FlagPhoneNumber (0.8.0):
+    - FlagPhoneNumber/libPhoneNumberiOS (= 0.8.0)
+  - FlagPhoneNumber/libPhoneNumberiOS (0.8.0)
+  - ImageSlideshow/Core (1.9.2)
+  - ImageSlideshow/SDWebImage (1.9.2):
+    - ImageSlideshow/Core
+    - SDWebImage (>= 3.7)
+  - Loaf (0.7.0)
+  - PhoneNumberKit (3.7.6):
+    - PhoneNumberKit/PhoneNumberKitCore (= 3.7.6)
+    - PhoneNumberKit/UIKit (= 3.7.6)
+  - PhoneNumberKit/PhoneNumberKitCore (3.7.6)
+  - PhoneNumberKit/UIKit (3.7.6):
+    - PhoneNumberKit/PhoneNumberKitCore
+  - SDWebImage (5.18.10):
+    - SDWebImage/Core (= 5.18.10)
+  - SDWebImage/Core (5.18.10)
+  - SFSymbols (0.9.5)
+  - SwiftyJSON (5.0.1)
+
+DEPENDENCIES:
+  - AAExtensions (= 0.1.4)
+  - Alamofire
+  - FlagPhoneNumber (~> 0.8)
+  - ImageSlideshow/SDWebImage
+  - Loaf
+  - PhoneNumberKit (~> 3.6)
+  - SFSymbols
+  - SwiftyJSON
+
+SPEC REPOS:
+  trunk:
+    - AAExtensions
+    - Alamofire
+    - FlagPhoneNumber
+    - ImageSlideshow
+    - Loaf
+    - PhoneNumberKit
+    - SDWebImage
+    - SFSymbols
+    - SwiftyJSON
+
+SPEC CHECKSUMS:
+  AAExtensions: f4c9ff703fcce320753bbb5b0543084dc4c44568
+  Alamofire: 3ca42e259043ee0dc5c0cdd76c4bc568b8e42af7
+  FlagPhoneNumber: 3712455b95f66cb0f2016fef7d9e34cddf8c7f9a
+  ImageSlideshow: be305b54eaf2b2cfc7a7141c7c734605d44dc07d
+  Loaf: d69937cd00649f3fa260beb8b7aef0a1feb861ef
+  PhoneNumberKit: 3c68a822bad955ffcefc72a52df72b6596498555
+  SDWebImage: fc8f2d48bbfd72ef39d70e981bd24a3f3be53fec
+  SFSymbols: 529a3714941859d03907fee7c41d1a225aa2df54
+  SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
+
+PODFILE CHECKSUM: b643cfa57782f49c5aee8ea9f4e75504ebcfdf87
+
+COCOAPODS: 1.14.3
