@@ -136,11 +136,25 @@ class SignupVC: BaseVC {
     
     @IBAction func submitBtn(_ sender: UIButton) {
         
-        self.showTool(msg: "Successfully SignedUp", state: .error)
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-            self.navigationController?.popViewController(animated: true)
+        guard let username = nameTF.text, !username.isEmpty,
+              let password = passwordTF.text, !password.isEmpty,
+              let email = emailTF.text, !email.isEmpty,
+              let cnic = resturant_nameTF.text, !cnic.isEmpty,
+              let address = addressTF.text, !address.isEmpty
+        else {
+            // Show an error message or handle the empty fields case
+            showTool(msg: "Please fill in all required fields", state: .warning)
+            print("Please fill in all required fields")
+            return
         }
-        //Signup()
+        
+        signup()
+
+//        self.showTool(msg: "Successfully SignedUp", state: .error)
+//        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+//            self.navigationController?.popViewController(animated: true)
+//        }
+        
         
     }
     
@@ -199,4 +213,72 @@ extension SignupVC: FPNTextFieldDelegate {
     {
         
     }
+}
+extension SignupVC {
+    func signup() {
+        // Prepare the request
+        var request = URLRequest(url: URL(string: "https://urbanshelters.capraworks.com/api/signup.php")!,timeoutInterval: Double.infinity)
+        request.httpMethod = "POST"
+        
+        // Prepare the parameters
+        let parameters = [
+            "username": nameTF.text,
+            "password": passwordTF.text,
+            "email": emailTF.text,
+            "cnic": resturant_nameTF.text,
+            "address": addressTF.text
+        ] as [String : Any]
+        
+        print(parameters)
+        request.httpBody = parameters.percentEncoded()
+        
+        // Perform the request
+        let task = URLSession.shared.dataTask(with: request) { data, response, error in
+            guard let data = data else {
+                print(String(describing: error))
+                return
+            }
+            
+            if let dataString = String(data: data, encoding: .utf8) {
+                print("Response: \(dataString)")
+                
+                // Check if the response indicates successful user registration
+                if dataString.contains("{\"message\":\"User registered successfully\"}") {
+                    DispatchQueue.main.async {
+                      //  self.navigationController?.popViewController(animated: true)
+                    }
+                } else if dataString.contains("{\"message\":\"Username already exists\"}") {
+                    // Show tool if username already exists
+                    DispatchQueue.main.async {
+                        self.showTool(msg: "Username already exists", state: .error)
+                    }
+                }
+            }
+        }
+
+        task.resume()
+
+    }
+}
+
+// Extension to percent encode parameters for POST request
+extension Dictionary {
+    func percentEncoded() -> Data? {
+        return map { key, value in
+            let escapedKey = "\(key)".addingPercentEncoding(withAllowedCharacters: .urlQueryValueAllowed) ?? ""
+            let escapedValue = "\(value)".addingPercentEncoding(withAllowedCharacters: .urlQueryValueAllowed) ?? ""
+            return escapedKey + "=" + escapedValue
+        }
+        .joined(separator: "&")
+        .data(using: .utf8)
+    }
+}
+
+// Allowed characters set for URL query value
+private extension CharacterSet {
+    static let urlQueryValueAllowed: CharacterSet = {
+        var allowed = CharacterSet.urlQueryAllowed
+        allowed.remove(charactersIn: "&+=")
+        return allowed
+    }()
 }
