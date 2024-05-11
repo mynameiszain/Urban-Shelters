@@ -222,11 +222,11 @@ extension SignupVC {
         
         // Prepare the parameters
         let parameters = [
-            "username": nameTF.text,
-            "password": passwordTF.text,
-            "email": emailTF.text,
-            "cnic": resturant_nameTF.text,
-            "address": addressTF.text
+            "username": nameTF.text!,
+            "password": passwordTF.text!,
+            "email": emailTF.text!,
+            "cnic": resturant_nameTF.text!,
+            "address": addressTF.text!
         ] as [String : Any]
         
         print(parameters)
@@ -245,7 +245,7 @@ extension SignupVC {
                 // Check if the response indicates successful user registration
                 if dataString.contains("{\"message\":\"User registered successfully\"}") {
                     DispatchQueue.main.async {
-                      //  self.navigationController?.popViewController(animated: true)
+                        self.navigationController?.popViewController(animated: true)
                     }
                 } else if dataString.contains("{\"message\":\"Username already exists\"}") {
                     // Show tool if username already exists

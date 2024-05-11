@@ -40,6 +40,9 @@ class ForgotVC: BaseVC {
             else
             {
                 DispatchQueue.main.async {
+                    let vc = self.storyboard?.instantiateViewController(identifier: "updatepasswordVC") as! updatepasswordVC
+                    vc.email = self.lbl.text!
+                    self.navigationController?.pushViewController(vc, animated: true)
                     self.showTool(msg: "Resend email sent", state: .error)
                 }
             }

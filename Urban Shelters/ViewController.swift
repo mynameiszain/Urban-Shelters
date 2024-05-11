@@ -5,12 +5,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var page: UIPageControl!
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var btn: UIButton!
-    
-//    var array = ["Unknown 1","Untitled-4","Untitled-14","2","Untitled-1"]
-//    var lbl1array = ["Malé, Maldives","Dhigurah, Maldives","Meeru Island, Maldives","Maalhos, Maldives","Baa Atoll, Maldives"]
-//    var lbl2array = ["3,027 kilometers away","2,870 Kilometer away","3,012 kilometers away","2,938 Kilometer away","2,950 Kilometers away"]
-//    var lbl3array = ["571$/night","765$/night","650$/night","163$/night","514$/night"]
-//    var lbl4array = ["Sajjad","Sajjad","Mubaashir","Sajjad","Ahsan"]
     var array = [String]()
     var lbl1array = [String]()
     var lbl2array = [String]()
@@ -69,9 +63,6 @@ func apicall()
         task.resume()
 
     }
-  
-
-    
     @IBAction func btnnext (_ sender : UIButton)
     {
         let vc = storyboard?.instantiateViewController(identifier: "SigninVC") as! SigninVC
