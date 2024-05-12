@@ -8,7 +8,7 @@
 import UIKit
 
 class ProfileVC: BaseVC {
-
+    
     @IBOutlet weak var name: UITextField!
     @IBOutlet weak var phoneno: UITextField!
     @IBOutlet weak var email: UITextField!
@@ -21,17 +21,17 @@ class ProfileVC: BaseVC {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    
+        
         if let savedEmail = UserDefaults.standard.string(forKey: "userEmail") {
             // Use the saved email
             print("Saved email:", savedEmail)
-             emails = savedEmail
+            emails = savedEmail
             apicall()
         } else {
             // Handle the case where the email is not found in UserDefaults
             print("Email not found in UserDefaults")
         }
-         
+        
         
     }
     func apicall() {
@@ -67,51 +67,54 @@ class ProfileVC: BaseVC {
         task.resume()
     }
     func callapiProfileUpdate()
-
+    
     {
         print(idd)
-//        let parameters = "{\r\n    \"user_id\": 3,\r\n    \"username\": \"zainxsxsapiif\",\r\n    \"password\": \"1234567890\",\r\n    \"email\": \"zainapi@zainapiif.com\",\r\n    \"cnic\": \"3520189765413\",\r\n    \"address\": \"pakistan lahore\"\r\n}\r\n"
+        //        let parameters = "{\r\n    \"user_id\": 3,\r\n    \"username\": \"zainxsxsapiif\",\r\n    \"password\": \"1234567890\",\r\n    \"email\": \"zainapi@zainapiif.com\",\r\n    \"cnic\": \"3520189765413\",\r\n    \"address\": \"pakistan lahore\"\r\n}\r\n"
         
-        let parameters = """
-        {
-            "user_id": \(idd),
-            "username": \(name.text!),
-            "email": \(email.text!),
-            "cnic": \(phoneno.text!),
-            "address": \(createdat.text!)
-        }
-        """
+//        let parameters = """
+//        {
+//            "user_id": \(idd),
+//            "username": \(name.text!),
+//            "email": \(email.text!),
+//            "cnic": \(phoneno.text!),
+//            "address": \(createdat.text!)
+//        }
+//        """
+        
+        let parameters = "{\r\n    \"user_id\": \(idd),\r\n    \"username\": \(name.text!),\r\n    \"email\": \"q@q.com\",\r\n    \"cnic\": \(phoneno.text!),\r\n    \"address\": \(createdat.text!)\r\n}\r\n"
+        print(parameters)
         let postData = parameters.data(using: .utf8)
-
-        var request = URLRequest(url: URL(string: "https://urbanshelters.capraworks.com/api/user-edit-profile.php?user_id=3")!,timeoutInterval: Double.infinity)
+        
+        var request = URLRequest(url: URL(string: "https://urbanshelters.capraworks.com/api/user-edit-profile.php?user_id=45")!,timeoutInterval: Double.infinity)
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
-
+        
         request.httpMethod = "PATCH"
         request.httpBody = postData
-
+        
         let task = URLSession.shared.dataTask(with: request) { data, response, error in
-          guard let data = data else {
-            print(String(describing: error))
-            return
-          }
-          print(String(data: data, encoding: .utf8)!)
+            guard let data = data else {
+                print(String(describing: error))
+                return
+            }
+            print(String(data: data, encoding: .utf8)!)
             DispatchQueue.main.async {
                 
                 
                 self.showTool(msg: "Profile updated", state: .success)
             }
         }
-
+        
         task.resume()
-
+        
         
     }
-
+    
     @IBAction func updateBtn(_ sender : UIButton)
     {
         callapiProfileUpdate()
     }
-
+    
     
     @IBAction func BackBtn(_ sender : UIButton)
     {
