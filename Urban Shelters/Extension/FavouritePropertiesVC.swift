@@ -85,7 +85,7 @@ class FavouritePropertiesVC: UIViewController {
         
         
         
-        var request = URLRequest(url: URL(string: "https://urbanshelters.capraworks.com/api/favorite_agent.php?user_id=\(id)&agent_id=\(homemodel[rowIndex].agentId!)")!,timeoutInterval: Double.infinity)
+        var request = URLRequest(url: URL(string: "https://urbanshelters.capraworks.com/api/favorite_properties.php?user_id=\(id)&agent_id=\(homemodel[rowIndex].id!)")!,timeoutInterval: Double.infinity)
         request.httpMethod = "POST"
         let task = URLSession.shared.dataTask(with: request) { data, response, error in
             guard let data = data else {

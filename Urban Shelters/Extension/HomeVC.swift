@@ -7,7 +7,7 @@
 
 import UIKit
 
-class HomeVC: UIViewController {
+class HomeVC: BaseVC {
     @IBOutlet weak var col1 : UICollectionView!
     @IBOutlet weak var col2 : UICollectionView!
     @IBOutlet weak var col3 : UICollectionView!
@@ -209,6 +209,64 @@ class HomeVC: UIViewController {
         task.resume()
     }
     
+    func searchbylocation(City :String)
+    {
+        var request = URLRequest(url: URL(string: "https://urbanshelters.capraworks.com/api/search_property.php?location=\(City)")!,timeoutInterval: Double.infinity)
+        request.httpMethod = "GET"
+        
+        let task = URLSession.shared.dataTask(with: request) { data, response, error in
+            if let error = error {
+                print("Error: \(error.localizedDescription)")
+                return
+            }
+            
+            guard let httpResponse = response as? HTTPURLResponse else {
+                print("Invalid response")
+                return
+            }
+            
+            print("Response status code: \(httpResponse.statusCode)")
+            
+            guard let data = data else {
+                print("No data received")
+                return
+            }
+            
+            do {
+                let jsonArray = try JSONSerialization.jsonObject(with: data) as? [[String: Any]]
+                var homeModels: [HomeModel] = []
+                
+                // Parse JSON array into an array of HomeModel objects
+                if let jsonArray = jsonArray {
+                    for json in jsonArray {
+                        let homeModel = HomeModel(fromDictionary: json)
+                        homeModels.append(homeModel)
+                    }
+                }
+                
+                // Assign the parsed HomeModel objects to the homemodel array
+                self.homemodel = homeModels
+                
+                if self.homemodel.count == 0
+                {
+                    DispatchQueue.main.async {
+                        
+                        
+                        self.showTool(msg: "No record found ", state: .success)
+                    }
+                }
+                DispatchQueue.main.async {
+                    self.col2.reloadData()
+                    self.col3.reloadData()
+                }
+            } catch {
+                print("Error parsing JSON: \(error.localizedDescription)")
+            }
+        }
+        
+        task.resume()
+    }
+    
    
 }
 extension HomeVC: UICollectionViewDelegate , UICollectionViewDataSource , UICollectionViewDelegateFlowLayout
@@ -220,6 +278,7 @@ extension HomeVC: UICollectionViewDelegate , UICollectionViewDataSource , UIColl
         }
         else if collectionView == col2
         {
+          
             return homemodel.count
         }
         else
@@ -310,30 +369,29 @@ extension HomeVC: UICollectionViewDelegate , UICollectionViewDataSource , UIColl
             
         }
     }
-    
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
         if collectionView == col1
         {
             if indexPath.row == 0
             {
-                
+                searchbylocation(City: "lahore")
             }
             else if indexPath.row == 1
             {
-                
+                searchbylocation(City: "karachi")
             }
             else if indexPath.row == 2
             {
-                
+                searchbylocation(City: "Islamabad")
             }
             else if indexPath.row == 3
             {
-                
+                searchbylocation(City: "faisalabad")
             }
             else if indexPath.row == 4
             {
-                
+                searchbylocation(City: "rawalpindi")
             }
         }
         
@@ -351,7 +409,6 @@ extension HomeVC: UICollectionViewDelegate , UICollectionViewDataSource , UIColl
             self.navigationController?.pushViewController(vc, animated: true)
         }
     }
-    
     
 }
 
